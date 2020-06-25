@@ -1,3 +1,3 @@
-def git(repository) {
+def getgit(repository) {
   git url: "${repository}"
 }
