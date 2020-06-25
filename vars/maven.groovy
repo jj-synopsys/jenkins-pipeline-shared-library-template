@@ -1,5 +1,4 @@
-def package() {
-  sh "mvn clean package"
-  //sh 'ls -alh'            
+def pkg() {
+  sh 'mvn clean package'            
   stash includes: '**/**', name: 'Artifacts'
 }
