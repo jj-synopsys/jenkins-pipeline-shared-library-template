@@ -1,4 +1,4 @@
-def git(repository) {
-  git 'https://github.com/jj-synopsys/insecure-bank.git'
+def getgit(repository) {
+  git url: "${repository}"
   sh 'ls -alh'
 }
