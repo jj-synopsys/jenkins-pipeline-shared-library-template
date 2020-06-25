@@ -1,4 +1,3 @@
 def git(repository) {
-  git "${repository}"
-  sh 'ls -alh'
+  git url: "$(repository)"
 }
